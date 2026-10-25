@@ -1,0 +1,8 @@
+{
+  "name": "kamesh Photography — Dindigul",
+  "description": "Archival bridal monographs, heirloom South Indian weddings, and timeless portraiture crafted in Dindigul and across Tamil Nadu.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

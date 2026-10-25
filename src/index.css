@@ -1,0 +1,186 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-tint: #e0c298;
+  --color-on-secondary-fixed: #241a00;
+  --color-secondary-fixed-dim: #e9c349;
+  --color-secondary-fixed: #ffe088;
+  --color-on-surface-variant: #d1c5b8;
+  --color-on-primary: #402d0f;
+  --color-background: #131313;
+  --color-on-primary-container: #513d1d;
+  --color-primary-fixed: #fedeb2;
+  --color-on-error-container: #ffdad6;
+  --color-surface-variant: #353534;
+  --color-surface: #131313;
+  --color-outline-variant: #4d463c;
+  --color-outline: #998f83;
+  --color-surface-container-high: #2a2a2a;
+  --color-inverse-on-surface: #313030;
+  --color-on-tertiary-fixed: #1e1b18;
+  --color-surface-container-low: #1c1b1b;
+  --color-on-background: #e5e2e1;
+  --color-tertiary-container: #b1aba6;
+  --color-on-primary-fixed-variant: #584323;
+  --color-on-secondary-container: #342800;
+  --color-error: #ffb4ab;
+  --color-surface-container-lowest: #0e0e0e;
+  --color-primary-fixed-dim: #e0c298;
+  --color-surface-dim: #131313;
+  --color-on-tertiary-container: #43403b;
+  --color-on-secondary-fixed-variant: #574500;
+  --color-secondary-container: #af8d11;
+  --color-inverse-primary: #725b38;
+  --color-surface-container: #201f1f;
+  --color-on-secondary: #3c2f00;
+  --color-on-tertiary: #33302c;
+  --color-primary: #e2c399;
+  --color-tertiary: #cdc6c1;
+  --color-error-container: #93000a;
+  --color-on-primary-fixed: #281800;
+  --color-on-tertiary-fixed-variant: #4a4642;
+  --color-inverse-surface: #e5e2e1;
+  --color-on-surface: #e5e2e1;
+  --color-surface-bright: #393939;
+  --color-on-error: #690005;
+  --color-tertiary-fixed: #e8e1db;
+  --color-surface-container-highest: #353534;
+  --color-secondary: #e9c349;
+  --color-primary-container: #c5a880;
+  --color-tertiary-fixed-dim: #ccc5bf;
+
+  --spacing-gutter-desktop: 2.5rem;
+  --spacing-margin-desktop: 4.5rem;
+  --spacing-gutter: 1.5rem;
+  --spacing-space-lg: 3rem;
+  --spacing-margin: 1.25rem;
+  --spacing-space-xl: 5rem;
+  --spacing-space-xs: 0.375rem;
+  --spacing-space-sm: 0.75rem;
+  --spacing-margin-tablet: 2.5rem;
+  --spacing-space-md: 1.5rem;
+
+  --font-headline-sm: "Playfair Display", Georgia, serif;
+  --font-body-sm: "Plus Jakarta Sans", sans-serif;
+  --font-headline-md: "Playfair Display", Georgia, serif;
+  --font-title-editorial: "Playfair Display", Georgia, serif;
+  --font-display-hero-mobile: "Playfair Display", Georgia, serif;
+  --font-body-md: "Plus Jakarta Sans", sans-serif;
+  --font-display-hero: "Playfair Display", Georgia, serif;
+  --font-body-lg: "Plus Jakarta Sans", sans-serif;
+  --font-label-caps: "Plus Jakarta Sans", sans-serif;
+  --font-headline-lg: "Playfair Display", Georgia, serif;
+  --font-headline-lg-mobile: "Playfair Display", Georgia, serif;
+  --font-label-meta: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #131313;
+    color: #e5e2e1;
+  }
+  body {
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+.rounded-DEFAULT {
+  border-radius: 0.25rem;
+}
+
+.text-headline-sm {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0em;
+  font-weight: 500;
+}
+.text-body-sm {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+.text-headline-md {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+.text-title-editorial {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+}
+.text-display-hero-mobile {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+  font-weight: 400;
+}
+.text-body-md {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+}
+.text-display-hero {
+  font-size: 64px;
+  line-height: 76px;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+}
+.text-body-lg {
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  font-weight: 300;
+}
+.text-label-caps {
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+}
+.text-headline-lg {
+  font-size: 44px;
+  line-height: 54px;
+  letter-spacing: -0.015em;
+  font-weight: 400;
+}
+.text-headline-lg-mobile {
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0em;
+  font-weight: 400;
+}
+.text-label-meta {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.06em;
+  font-weight: 400;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
